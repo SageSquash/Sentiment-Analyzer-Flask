@@ -55,7 +55,7 @@ def sentiment(k):
 
 
 @app.route('/', methods=['GET'])  # route to display the home page
-# @cross_origin()
+@cross_origin()
 def homePage():
     return render_template("index.html")
 
